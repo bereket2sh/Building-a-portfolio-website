@@ -8,46 +8,149 @@
       href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap"
       rel="stylesheet"
     />
-    <meta name="description" content="Your Portfolio description" />
-    <meta name="keywords" content="your, keywords, here" />
-    <title>Your Name - Portfolio</title>
+    <meta name="description" content="Bereket Ayele - Programming Languages Researcher" />
+    <meta name="keywords" content="Programming Languages, Static Analysis, Refinement Types, Computer Science, PhD Research" />
+    <title>Bereket Ayele - Programming Languages Research</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   </head>
   <body>
+    <!-- Modern Navigation -->
     <header class="header container">
       <nav>
         <ul class="header__menu">
-          <li><a class="header__link" href="#about">About</a></li>
+          <li><a class="header__link" href="#research">Research</a></li>
+          <li><a class="header__link" href="#publications">Publications</a></li>
+          <li><a class="header__link" href="#blog">Blog</a></li>
           <li><a class="header__link" href="#contact">Contact</a></li>
-          <li><a class="header__link" href="#resume">Resume</a></li>
         </ul>
       </nav>
     </header>
+
     <main>
+      <!-- Hero Section -->
       <section class="hero container">
-        <img class="hero__img" src="/bereket.png" alt="Bereket Ayele" />
-        <p class="hero__subtitle">Computer Science PhD Student</p>
-        <h1 class="hero__title">Bereket Ayele</h1>
-        <p class="hero__description">Computer Science PhD student at the University of Louisiana at Lafayette</p>
-      </section>
-      <section id="about" class="about container section">
-        <div class="about__content">
-          <h2 class="about__title">About</h2>
-          <p class="about__description">
-            Computer Science PhD student at the University of Louisiana at Lafayette.
-          </p>
+        <div class="hero__content">
+          <img class="hero__img" src="/bereket.png" alt="Bereket Ayele" />
+          <div class="hero__text">
+            <h1 class="hero__title">Bereket Ayele</h1>
+            <p class="hero__name-native">በረከት አየለ</p>
+            <p class="hero__subtitle">Programming Languages Researcher</p>
+            <p class="hero__institution">PhD Student in Computer Science</p>
+            <p class="hero__university">University of Louisiana at Lafayette</p>
+          </div>
+        </div>
+        <div class="hero__quick-links">
+          <a href="mailto:bereket-shimels.ayele1@louisian.edu" class="quick-link">Email</a>
+          <a href="https://github.com/bereket2sh" class="quick-link">GitHub</a>
+          <a href="https://conf.researchr.org/profile/conf/bereketayele" class="quick-link">Publications</a>
         </div>
       </section>
+
+      <!-- Research Interests -->
+      <section id="research" class="research container section">
+        <h2 class="section__title">Research</h2>
+        <div class="research__content">
+          <div class="research__interests">
+            <h3 class="research__subtitle">Research Interests</h3>
+            <ul class="research__list">
+              <li>Programming Languages Design & Implementation</li>
+              <li>Static Analysis & Verification</li>
+              <li>Refinement Types</li>
+              <li>Synchronous Programming</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Publications Section -->
+      <section id="publications" class="publications container section">
+        <h2 class="section__title">Publications</h2>
+        <div class="publications__grid">
+          <!-- ICFP 2024 Paper -->
+          <article class="publication">
+            <div class="publication__year">2024</div>
+            <div class="publication__content">
+              <h3>Synchronous Programming with Refinement Types</h3>
+              <p class="publication__venue">International Conference on Functional Programming (ICFP)</p>
+              <div class="publication__links">
+                <a href="https://conf.researchr.org/profile/conf/bereketayele" class="pub-link" target="_blank">
+                  <span class="icon">📄</span> Paper
+                </a>
+                <!-- Only add links that exist -->
+                <!-- <a href="#" class="pub-link">Slides</a> -->
+                <!-- <a href="#" class="pub-link">Code</a> -->
+              </div>
+            </div>
+          </article>
+
+          <!-- FTSCS 2022 Paper -->
+          <article class="publication">
+            <div class="publication__year">2022</div>
+            <div class="publication__content">
+              <h3>Synchronous Programming and Refinement Types in Robotics</h3>
+              <p class="publication__venue">Formal Techniques for Safety-Critical Systems (FTSCS)</p>
+              <div class="publication__links">
+                <a href="https://conf.researchr.org/profile/conf/bereketayele" class="pub-link" target="_blank">
+                  <span class="icon">📄</span> Paper
+                </a>
+                <!-- Only add links that exist -->
+                <!-- <a href="#" class="pub-link">Slides</a> -->
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Blog Section -->
+      <section id="blog" class="blog container section">
+        <h2 class="section__title">Research Blog</h2>
+        <div class="blog__content">
+          <div class="blog__grid">
+            <!-- First Blog Post -->
+            <article class="blog__post">
+              <div class="blog__post-content">
+                <span class="blog__post-date">March 2024</span>
+                <h3 class="blog__post-title">Getting Started with Programming Languages Research</h3>
+                <p class="blog__post-excerpt">
+                  My journey into programming languages research and what I've learned so far in my PhD program... coming soon!
+                </p>
+                <a href="/posts/getting-started.html" class="blog__read-more">Read More →</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
       <section id="contact" class="contact container section">
-        <h2 class="contact__title">Get In Contact</h2>
-        <p class="contact__description">
-          Feel free to reach out for academic collaborations or inquiries.
-        </p>
-        <a class="contact__btn btn" href="mailto:your.email@louisiana.edu" target="_blank">Reach Out</a>
+        <h2 class="section__title">Contact</h2>
+        <div class="contact__content">
+          <div class="contact__info">
+            <p>I'm always interested in research collaborations and academic discussions.</p>
+            <div class="contact__links">
+              <a href="mailto:bereket-shimels.ayele1@louisian.edu" class="contact__link">
+                <i class="fas fa-envelope"></i> Email
+              </a>
+              <a href="https://www.linkedin.com/in/bereket2021/" class="contact__link">
+                <i class="fab fa-linkedin"></i> LinkedIn
+              </a>
+              <a href="https://github.com/bereket2sh" class="contact__link">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="https://conf.researchr.org/profile/conf/bereketayele" class="contact__link">
+                <i class="fas fa-book-open"></i> Publications
+              </a>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
-    <footer class="footer container section">
-      <h3 class="footer__title">~ Bereket Ayele ~</h3>
+
+    <footer class="footer container">
+      <p class="footer__text">© 2024 Bereket Ayele - Programming Languages Research</p>
     </footer>
+
     <script type="module" src="./src/main.js"></script>
   </body>
 </html>
